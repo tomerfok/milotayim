@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Language" content="iw-il">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>מילותיים - Wordle פעמיים כי טוב</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="milotayim.css?0" />
+  <script src="milotayim.js?0"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R83Z59BP68"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R83Z59BP68');
+  </script>
+</head>
+<body>
+<div id="main">
+  <div id="title-row">
+    <div class="title-side"></div>
+    <div id="title">מילוֺתיים</div>
+    <div class="title-side"></div>
+  </div>
+  <div id="double-guesses-wrapper">
+    <div id="guesses-wrapper" class="wrapper">
+      <div id="guesses-R" class="guesses"></div>
+      <div id="guesses-L" class="guesses"></div>
+    </div>
+  </div>
+  <div id="keyboard-wrapper">
+    <div id="keyboard">
+      <div id="keybd-row1" class="keybd-row"></div>
+      <div id="keybd-row2" class="keybd-row"></div>
+      <div id="keybd-row3" class="keybd-row"></div>
+    </div>
+  </div>
+  <div class="modal" id="instructions">
+    <div class="modal-frame">
+      <div class="modal-content">
+        <div class="modal-title">ברוכים הבאים ל<span style="color:#447eff; font-weight: 900;">מילוֹתיים</span>!</div>
+          <div class="modal-text" style="padding: 10px 0;">
+            את <a href="https://bulmila.com" target="_blank">בול מילה</a> אתם מכירים?<br>
+            <span style="color:#447eff; font-weight: 900;">מילותיים</span> זה בדיוק אותו הדבר,<br>
+            רק שכאן עליכם לגלות שתי מילים קשורות…<br>
+            עם אותם רמזים!<br>
+            הנה סוגי הרמזים שתקבלו.<br>
+            (אלה רק דוגמאות, ולא רמזים למילה האמיתית)
+          </div>
+          <div class="modal-text">
+            <div class="single-row-wrapper">
+              <div class="guesses single-row">
+                <div class="guess-row">
+                  <div class="box">ה</div>
+                  <div class="box bul-box">ת</div>
+                  <div class="box">ב</div>
+                  <div class="box">ד</div>
+                  <div class="box">ח</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-text" style="padding-bottom: 10px;">האות ת' קיימת במילה ונמצאת במקומה הנכון.</div>
+          <div class="modal-text">
+            <div class="single-row-wrapper">
+              <div class="guesses single-row">
+                <div class="guess-row">
+                  <div class="box">ר</div>
+                  <div class="box">ש</div>
+                  <div class="box pgia-box">י</div>
+                  <div class="box">ו</div>
+                  <div class="box">נ</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-text" style="padding-bottom: 10px;">האות י' קיימת במילה, אך לא במקום הזה.</div>
+          <div class="modal-text">
+            <div class="single-row-wrapper">
+              <div class="guesses single-row">
+                <div class="guess-row">
+                  <div class="box klum-box">ט</div>
+                  <div class="box">פ</div>
+                  <div class="box">י</div>
+                  <div class="box">ח</div>
+                  <div class="box">ה</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-text">האות ט' אינה נמצאת במילה.</div>
+          <div class="modal-text modal-light modal-separated" id="loading-msg">
+            ⏳ טוען...
+          </div>
+          <div class="modal-button" id="start-button">בואו נתחיל!</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alert" id="alert" style="display: none;">
+    <div class="alert-content">
+      <div class="alert-text" id="alert-text"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
