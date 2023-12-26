@@ -676,7 +676,7 @@ $(document).ready(() => {
       historicDate ? 'todays_words?date=' + historicDate : 'todays_words');
   $.get('allwords.txt').done(words => {
     allowedWords = words.split(/\r?\n/);
-    todaysWords = {'L': "הכרמל", 'R': "בורקס"}
+    todaysWords = {'L': "יצירה", 'R': "צביעה"}
     todaysNum = lastCompletedWordNum + 1;
     $('#loading-msg').hide();
     $('#start-button').show();
